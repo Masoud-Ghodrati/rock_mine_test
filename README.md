@@ -36,14 +36,15 @@ The results of classification after PCA.
 As the best classifier turns out to be NuSVC, I decided to do some grid search to find the best parameters and do the classification again. The is the final results:
 
 
-               precision |   recall | f1-score |  support
-           --------------|----------|----------|---------
-           M    |  0.64  |   0.89   |  0.74    |   18
-           R    |  0.88  |   0.62   |  0.73    |   24
-                |        |          |          |
-   micro avg    |  0.74  |   0.74   |  0.74    |   42
-   macro avg    |  0.76  |   0.76   |  0.74    |   42
+precision |   recall | f1-score |  support
+----------|----------|----------|---------
+M    |  0.64  |   0.89   |  0.74    |   18
+R    |  0.88  |   0.62   |  0.73    |   24
+     |        |          |          |
+micro avg    |  0.74  |   0.74   |  0.74    |   42
+macro avg    |  0.76  |   0.76   |  0.74    |   42
 weighted avg    |  0.78  |   0.74   |  0.74    |   42
+
 
 
 
