@@ -33,7 +33,7 @@ As some of the features for two classes might have less contribution to overall 
 ![figer](classification_results_PCA.png)
 The results of classification after PCA.
 
-As the best classifier turns out to be NuSVC, I decided to do some grid search to find the best parameters and do the classification again. The is the final results:
+As NuSVC turns out to be best one of th best classifiers, I decided to do some grid search to find the best parameters and do the classification again. The is the final results:
 
 
 precision |   recall | f1-score |  support
