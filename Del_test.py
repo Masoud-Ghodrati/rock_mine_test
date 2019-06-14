@@ -34,8 +34,8 @@ import seaborn as sns
 
 
 # data path and file name
-data_path   = 'C:/MyFolder/rock_mine_test'
-result_path = 'C:/MyFolder/rock_mine_test'
+data_path   = 'C:/MyFolder/Git/rock_mine_test'
+result_path = 'C:/MyFolder/Git/rock_mine_test'
 file_name   = 'sonar.all-data'
 
 # first lets read the tsv data file
@@ -99,7 +99,7 @@ result     = pd.DataFrame(log)
 result_acc = result.groupby(["Classifier"])['Accuracy'].aggregate(np.median).reset_index().sort_values('Accuracy')
 result_lss = result.groupby(["Classifier"])['Log Loss'].aggregate(np.median).reset_index().sort_values('Log Loss')
 
-fig, ax    = plt.subplots(nrows=2, ncols=1, figsize=(10, 15))
+fig, ax    = plt.subplots(nrows=2, ncols=1, figsize=(6, 12))
 ax         = plt.subplot(2, 1, 1)
 sns.set_color_codes("muted")
 sns.barplot(x='Accuracy', y='Classifier', data=log, color="b", order=result_acc['Classifier'])
@@ -158,7 +158,7 @@ result_pca     = pd.DataFrame(log_pca)
 result_acc_pca = result.groupby(["Classifier"])['Accuracy'].aggregate(np.median).reset_index().sort_values('Accuracy')
 result_lss_pca = result.groupby(["Classifier"])['Log Loss'].aggregate(np.median).reset_index().sort_values('Log Loss')
 
-fig, ax    = plt.subplots(nrows=2, ncols=1, figsize=(10, 15))
+fig, ax    = plt.subplots(nrows=2, ncols=1, figsize=(6, 12))
 ax         = plt.subplot(2, 1, 1)
 sns.set_color_codes("muted")
 sns.barplot(x='Accuracy', y='Classifier', data=log, color="b", order=result_acc_pca['Classifier'])
